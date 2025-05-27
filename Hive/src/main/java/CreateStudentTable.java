@@ -6,9 +6,9 @@ import java.sql.Statement;
 public class CreateStudentTable {
     public static void main(String[] args) {
         String driverName = "org.apache.hive.jdbc.HiveDriver";
-        String connectionURL = "jdbc:hive2://localhost:10000/default"; // Adjust hostname and database
-        String username = ""; // Hive typically does not require username
-        String password = ""; // Hive typically does not require password
+        String connectionURL = "jdbc:hive2://master:10000/default"; // Adjust hostname and database
+        String username = "hadoop";
+        String password = "20041031";
 
         Connection conn = null;
         Statement stmt = null;
